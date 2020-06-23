@@ -28,8 +28,15 @@ Route::get('/welcome', function(){
 });
 
 
-// Route with Parameter
+// Route with Dynamic Parameter
     // for dynamic value, use {} this
 Route::get('welcome/{name}', function($name){
     return 'Welcome ' . $name;
+});
+
+
+// Optional Route with Dynamic Parameter
+    // But need default value => so we will give it in Parameter
+Route::get('city/{city?}', function($city = "Karachi"){
+    return 'Welcome to ' . $city;
 });
