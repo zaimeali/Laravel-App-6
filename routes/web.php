@@ -18,7 +18,7 @@ Route::get('/', function () {
 });
 
 
-// Static Method: get, post, put, patch, delete, options
+// Static HTTP Method: get, post, put, patch, delete, options, head
 
 // Route Class
     // giving Static Path
@@ -54,4 +54,22 @@ Route::redirect('/', 'city');
 
 
 // Permanent Redirect
-Route::permanentRedirect('/', 'welcome');
+// Route::permanentRedirect('/', 'welcome');
+
+
+Route::get('/nice', function(){
+    return 'Very Nice App';
+});
+
+// View Route
+    // will load *.blade.php file in resources/views
+// Route::view('/', 'welcome');  // Laravel Method not a HTTP one
+            // Commenting Permanent Redirect Method
+
+
+// Route::view('/', 'welcome'); // will not work because haven't defined welcome view in a views folder
+
+
+// Created a name view in a views folder
+    // third param is an array to pass data to the view
+Route::view('/', 'name', ['name' => 'Zaime Ali']);  //commenting view welcome route above
