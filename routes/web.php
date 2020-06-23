@@ -26,3 +26,10 @@ Route::get('/', function () {
 Route::get('/welcome', function(){
     return 'Welcome to my app';
 });
+
+
+// Route with Parameter
+    // for dynamic value, use {} this
+Route::get('welcome/{name}', function($name){
+    return 'Welcome ' . $name;
+});
