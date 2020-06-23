@@ -1,4 +1,6 @@
-### to run: composer create-project laravel/laravel Laravel6App -vvv
+### to create project: composer create-project laravel/laravel Laravel6App -vvv
+
+### to run: php artisan serve
 
 <p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
