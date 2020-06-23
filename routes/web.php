@@ -51,3 +51,7 @@ Route::get('city/{city?}', function($city = "Karachi"){
         // For SEO Purpose
         // default Temporary = 302 or leave it as blank
 Route::redirect('/', 'city');
+
+
+// Permanent Redirect
+Route::permanentRedirect('/', 'welcome');
