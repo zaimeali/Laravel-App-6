@@ -37,6 +37,17 @@ Route::get('welcome/{name}', function($name){
 
 // Optional Route with Dynamic Parameter
     // But need default value => so we will give it in Parameter
+    // http://127.0.0.1:8000/city
+    // or
+    // http://127.0.0.1:8000/city/islamabad
 Route::get('city/{city?}', function($city = "Karachi"){
     return 'Welcome to ' . $city;
 });
+
+
+
+// Redirect
+    // Third Parameter: Temporary or Permanent Redirect 
+        // For SEO Purpose
+        // default Temporary = 302 or leave it as blank
+Route::redirect('/', 'city');
