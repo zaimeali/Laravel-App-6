@@ -72,4 +72,8 @@ Route::get('/nice', function(){
 
 // Created a name view in a views folder
     // third param is an array to pass data to the view
-Route::view('/', 'name', ['name' => 'Zaime Ali']);  //commenting view welcome route above
+// Route::view('/', 'name', ['name' => 'Zaime Ali']);  //commenting view welcome route above
+
+
+Route::view('/', 'info', ['name' => 'Zaime Ali', 'age' => 22]);
+    // Parameter length should not be more than 4 or 5 or else there'll be a load
